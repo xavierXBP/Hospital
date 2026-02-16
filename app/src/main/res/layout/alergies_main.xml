@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/seguentpacient"
+        android:layout_width="244dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
+        android:text="Següent Pacient"
+        app:layout_constraintStart_toEndOf="@+id/anteriorpacient"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <Button
+        android:id="@+id/btnmedicament"
+        android:layout_width="244dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="172dp"
+        android:text="Més Informacio"
+        app:layout_constraintStart_toEndOf="@+id/descripcio"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <Button
+        android:id="@+id/anteriorpacient"
+        android:layout_width="244dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="20dp"
+        android:text="Anterior Pacient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <Button
+        android:id="@+id/btnDespues"
+        android:layout_width="227dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#CCC7C7"
+        android:text="Següent Hospitalització "
+        android:textColor="#262525"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintStart_toEndOf="@+id/anterioralergia" />
+
+    <Button
+        android:id="@+id/anterioralergia"
+        android:layout_width="227dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#CCC7C7"
+        android:text="Següent Hospitalització "
+        android:textColor="#262525"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_marginTop="31dp"
+        android:background="#DBD3D3"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/malalties"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="148dp"
+        android:background="#DBD3D3"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView69"
+        app:layout_constraintVertical_bias="0.2"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnDades"
+        android:layout_width="177dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="104dp"
+        android:text="Dades Personals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hospitalitzacio"
+        android:layout_width="177dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="32dp"
+        android:text="Hospitalitzacions"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/btnDades" />
+
+    <Button
+        android:id="@+id/malalties"
+        android:layout_width="177dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:text="Malalties"
+        app:layout_constraintStart_toEndOf="@+id/hospitalitzacio"
+        app:layout_constraintTop_toBottomOf="@+id/nomComplet" />
+
+    <Button
+        android:id="@+id/medicaments"
+        android:layout_width="177dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="31dp"
+        android:text="Llista Medicaments"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/malalties" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="224dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="32dp"
+        android:text="Introdueix Nom"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintStart_toEndOf="@+id/nomComplet"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="167dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="nom"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomComplet"
+        android:layout_width="346dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="32dp"
+        android:hint="Nom Del Pacient"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/nomcomplet"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomcomplet"
+        android:layout_width="250dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:text="Nom complet "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="237dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="56dp"
+        android:text="Medicament"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="255dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="48dp"
+        android:text="Descripcio de la reacció alergica"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/descripcio"
+        android:layout_width="511dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="21dp"
+        android:text="Descripcio de la reacció alergica"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/medicamenName"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/medicamenName"
+        android:layout_width="237dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="31dp"
+        android:hint="Nom medicament"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

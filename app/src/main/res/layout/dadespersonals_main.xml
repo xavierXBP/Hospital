@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnmalalties"
+        android:layout_width="212dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Malalties Patides"
+        app:layout_constraintStart_toEndOf="@+id/btnospitalitzacio"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <Button
+        android:id="@+id/btnMedicament"
+        android:layout_width="295dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:text="Llista Medicaments Disponibles"
+        app:layout_constraintStart_toEndOf="@+id/alergies"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <Button
+        android:id="@+id/alergies"
+        android:layout_width="142dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="Alèrgies"
+        app:layout_constraintStart_toEndOf="@+id/btnmalalties"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <TextView
+        android:id="@+id/nomcomplet1"
+        android:layout_width="288dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Nom complet del pacient:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textnom2"
+        android:layout_width="234dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Nom"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtnom1"
+        app:layout_constraintTop_toBottomOf="@+id/btnospitalitzacio" />
+
+    <TextView
+        android:id="@+id/txtctNeixement"
+        android:layout_width="207dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="248dp"
+        android:hint="Ct Neixement"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtciutatn1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtdni"
+        android:layout_width="287dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="DNI"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textDNi1"
+        app:layout_constraintTop_toBottomOf="@+id/txtcognom2" />
+
+    <TextView
+        android:id="@+id/txt1cognom1"
+        android:layout_width="111dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="36dp"
+        android:text="Cognom1"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnom1" />
+
+    <TextView
+        android:id="@+id/txtcarrer"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="24dp"
+        android:hint="Carrer"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtcarrer1"
+        app:layout_constraintTop_toBottomOf="@+id/txtciutatr1" />
+
+    <TextView
+        android:id="@+id/txtcarrer1"
+        android:layout_width="84dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="660dp"
+        android:layout_marginTop="32dp"
+        android:text="Carrer"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtciutatr1" />
+
+    <TextView
+        android:id="@+id/txtcPostal"
+        android:layout_width="253dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:hint="Codi Postal"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtcodipostal1"
+        app:layout_constraintTop_toBottomOf="@+id/txtcarrer" />
+
+    <TextView
+        android:id="@+id/txtcodipostal1"
+        android:layout_width="134dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="660dp"
+        android:layout_marginTop="32dp"
+        android:text="Codi Postal"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcarrer1" />
+
+    <TextView
+        android:id="@+id/dtnai1"
+        android:layout_width="188dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="100dp"
+        android:text="Data Neixement"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt2cognom1" />
+
+    <TextView
+        android:id="@+id/edat1"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="36dp"
+        android:text="Edat"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dtnai1" />
+
+    <TextView
+        android:id="@+id/txtEdat"
+        android:layout_width="108dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="36dp"
+        android:hint="Edat"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/edat1"
+        app:layout_constraintTop_toBottomOf="@+id/dtnai1" />
+
+    <TextView
+        android:id="@+id/txtdtNaixement"
+        android:layout_width="194dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="108dp"
+        android:hint="DT Naixement"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/dtnai1"
+        app:layout_constraintTop_toBottomOf="@+id/txtcognom2" />
+
+    <TextView
+        android:id="@+id/txtcognom1"
+        android:layout_width="185dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="32dp"
+        android:hint="Cognom"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txt1cognom1"
+        app:layout_constraintTop_toBottomOf="@+id/textnom2" />
+
+    <TextView
+        android:id="@+id/txtnom1"
+        android:layout_width="76dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="40dp"
+        android:text="Nom"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnospitalitzacio" />
+
+    <TextView
+        android:id="@+id/txtcognom2"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="28dp"
+        android:hint="Cognom"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txt2cognom1"
+        app:layout_constraintTop_toBottomOf="@+id/txtcognom1" />
+
+    <TextView
+        android:id="@+id/textDNi1"
+        android:layout_width="72dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="104dp"
+        android:text="DNI"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1cognom1" />
+
+    <TextView
+        android:id="@+id/txt2cognom1"
+        android:layout_width="114dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="28dp"
+        android:text="Cognom2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1cognom1" />
+
+    <TextView
+        android:id="@+id/txtctResidencia"
+        android:layout_width="198dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:hint="Ct Residencial"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtciutatr1"
+        app:layout_constraintTop_toBottomOf="@+id/txtctNeixement" />
+
+    <TextView
+        android:id="@+id/txtciutatr1"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="648dp"
+        android:layout_marginTop="20dp"
+        android:text="Ciutat Residencial"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtciutatn1" />
+
+    <TextView
+        android:id="@+id/txtciutatn1"
+        android:layout_width="198dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="648dp"
+        android:layout_marginTop="248dp"
+        android:text="Ciutat Neixement"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="173dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="28dp"
+        android:text="Seguent Pacient"
+        app:layout_constraintStart_toEndOf="@+id/btnBefor"
+        app:layout_constraintTop_toBottomOf="@+id/txtEdat" />
+
+    <Button
+        android:id="@+id/btnBefor"
+        android:layout_width="165dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="31dp"
+        android:text="Anterior Pacient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edat1" />
+
+    <TextView
+        android:id="@+id/editTextText2"
+        android:layout_width="427dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:hint="Nom Del Pacient"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/nomcomplet1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnospitalitzacio"
+        android:layout_width="212dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:text="Hospitalizacions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomcomplet1" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="240dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="348dp"
+        android:layout_marginBottom="92dp"
+        android:text="Inserir Pacient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

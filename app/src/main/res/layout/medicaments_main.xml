@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNom"
+        android:layout_width="295dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="648dp"
+        android:layout_marginTop="48dp"
+        android:hint="Nom"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNom3"
+        android:layout_width="295dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="152dp"
+        android:hint="Nom"
+        android:text="Marca"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMarca"
+        android:layout_width="295dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="648dp"
+        android:layout_marginTop="32dp"
+        android:hint="Marca"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNom" />
+
+    <TextView
+        android:id="@+id/tvFormaPresentacio"
+        android:layout_width="295dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="648dp"
+        android:layout_marginTop="52dp"
+        android:hint="Formato "
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMarca" />
+
+    <TextView
+        android:id="@+id/tvNom4"
+        android:layout_width="295dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="260dp"
+        android:hint="Nom"
+        android:text="Format"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/anteriorhospitalitzacio"
+        android:layout_width="206dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="608dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNom2"
+        android:layout_width="295dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="48dp"
+        android:hint="Nom"
+        android:text="Nom Medicament"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tancar"
+        android:layout_width="206dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="544dp"
+        android:layout_marginTop="644dp"
+        android:text="Tancar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDespues"
+        android:layout_width="206dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="608dp"
+        android:layout_marginEnd="100dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFormaPresentacio2"
+        android:layout_width="295dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="484dp"
+        android:layout_marginTop="160dp"
+        android:hint="Formato "
+        android:text="Efectes Secundaris"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMarca" />
+
+    <TextView
+        android:id="@+id/tvEfectesSecundaris"
+        android:layout_width="592dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="348dp"
+        android:layout_marginTop="460dp"
+        android:hint="Nom"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
